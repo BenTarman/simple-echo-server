@@ -56,6 +56,7 @@ int processConnection(int connfd)
 			return 1;
 		}
 
+
 		debug(KYEL "calling write..." KRESET "\n");
 		write(connfd, buffer, strlen(buffer));
 		write(connfd, "\n", strlen("\n"));
@@ -167,6 +168,16 @@ int main(int argc, char **argv)
 
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
